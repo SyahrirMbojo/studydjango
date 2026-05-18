@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block title %}
+  Article
+{% endblock %}
+
+{% block content %}
+  <div class="main-content">
+    <div class="ui container">
+      <h1>Article Page</h1>
+
+      {% for item in data %}
+        <p>{{ item }}</p>
+      {% endfor %}
+
+      <div>{{ text }}</div>
+      <div>{{ test }}</div>
+      <div>{{ api }}</div>
+    </div>
+  </div>
+{% endblock %}
